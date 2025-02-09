@@ -2894,7 +2894,7 @@ ul.skills-icons li .icon-wrapper img {
   z-index: 1;
 }
 #wrapper .copyright {
-  color: #ebebeb;
+  color: #ffffff;
   font-size: 1rem;
   position: relative;
   width: 50vw;
@@ -3110,6 +3110,7 @@ ul.skills-icons li .icon-wrapper img {
     display: none;
   }
   #wrapper .copyright {
+    color: #000000;
     left: 0;
     width: 100%;
   }
