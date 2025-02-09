@@ -1873,18 +1873,17 @@ input[type=radio] + label:before {
     font-size: 1rem;
   }
 }
-/* Icon */
 .icon {
   display: inline-block;
   border-bottom: none;
   position: relative;
   text-decoration: none;
 }
-.icon svg {
+.icon img {
   width: 1.25rem;
   height: 1.25rem;
-  fill: currentColor;
   vertical-align: middle;
+  filter: invert(100%);
 }
 .icon > .label {
   display: none;
@@ -2709,14 +2708,13 @@ ul.skills-icons li {
   padding: 0.5rem 0;
   position: relative;
 }
-ul.skills-icons li:before {
-  content: "";
+ul.skills-icons li .icon-wrapper {
   width: 3.5rem;
   height: 3.5rem;
   background-color: #f4f4f4;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M256,0l221.7,128v256L256,512L34.3,384V128L256,0z'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M256,0l221.7,128v256L256,512L34.3,384V128L256,0z'/%3E%3C/svg%3E");
   -webkit-mask-size: contain;
@@ -2726,47 +2724,10 @@ ul.skills-icons li:before {
   -webkit-mask-position: center;
   mask-position: center;
 }
-ul.skills-icons li.flutter:before {
-  background-image: url("../images/skills/flutter-logo.svg");
-}
-ul.skills-icons li.react-native:before {
-  background-image: url("../images/skills/react-native.svg");
-}
-ul.skills-icons li.react:before {
-  background-image: url("../images/skills/react.svg");
-}
-ul.skills-icons li.angular:before {
-  background-image: url("../images/skills/angular.svg");
-}
-ul.skills-icons li.vue:before {
-  background-image: url("../images/skills/vue.svg");
-}
-ul.skills-icons li.redux:before {
-  background-image: url("../images/skills/redux.svg");
-}
-ul.skills-icons li.dart:before {
-  background-image: url("../images/skills/dart.svg");
-}
-ul.skills-icons li.javascript:before {
-  background-image: url("../images/skills/javascript.svg");
-}
-ul.skills-icons li.typescript:before {
-  background-image: url("../images/skills/typescript.svg");
-}
-ul.skills-icons li.html5:before {
-  background-image: url("../images/skills/html5.svg");
-}
-ul.skills-icons li.jquery:before {
-  background-image: url("../images/skills/jquery.svg");
-}
-ul.skills-icons li.css3:before {
-  background-image: url("../images/skills/css3.svg");
-}
-ul.skills-icons li.sass:before {
-  background-image: url("../images/skills/sass.svg");
-}
-ul.skills-icons li.jest:before {
-  background-image: url("../images/skills/jest.svg");
+ul.skills-icons li .icon-wrapper img {
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: contain;
 }
 @media screen and (max-width: 768px) {
   ul.skills-icons {
