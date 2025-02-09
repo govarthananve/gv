@@ -63,7 +63,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
 
       if (data.success) {
         document.getElementById("successMessage").textContent =
-          "Thank you for your message. We will get back to you soon!";
+          "Thank you for your message. I will get back to you soon!";
         document.getElementById("contactForm").reset();
       } else {
         throw new Error("Something went wrong!");
