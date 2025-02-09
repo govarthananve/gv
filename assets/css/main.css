@@ -3136,6 +3136,7 @@ ul.skills-icons li .icon-wrapper img {
   }
   #wrapper .copyright {
     padding: 0 4rem 4rem 4rem;
+    color: #000000;
   }
 }
 @media screen and (max-width: 736px) {
@@ -3162,6 +3163,7 @@ ul.skills-icons li .icon-wrapper img {
   }
   #wrapper .copyright {
     padding: 0 2rem 2rem 2rem;
+    color: #000000;
   }
 }
 @media screen and (max-width: 360px) {
@@ -3188,6 +3190,7 @@ ul.skills-icons li .icon-wrapper img {
   }
   #wrapper .copyright {
     padding: 0 1.5rem 1.5rem 1.5rem;
+    color: #000000;
   }
 }
 
