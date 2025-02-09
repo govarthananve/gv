@@ -1,0 +1,42 @@
+///
+/// Paradigm Shift by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* _icons.scss */
+ul.icons {
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	justify-content: flex-end;
+	gap: 1rem;
+	flex-wrap: wrap;
+
+	@media screen and (max-width: 1152px) {
+		justify-content: flex-start;
+	}
+
+	li {
+		display: inline-block;
+
+		.icon {
+			transition: background-color 0.2s ease-in-out;
+			width: 2.25rem;
+			height: 2.25rem;
+			text-align: center;
+			line-height: 2.25rem;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #ffffff;
+			background: rgba(255, 255, 255, 0.05);
+
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+		}
+	}
+}
