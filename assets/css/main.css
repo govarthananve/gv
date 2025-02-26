@@ -2053,6 +2053,9 @@ ul {
   margin: 0 0 2rem 0;
   padding-left: 1rem;
 }
+ul.resume-actions {
+  padding-left: 0;
+}
 ul li {
   padding-left: 0.325rem;
 }
