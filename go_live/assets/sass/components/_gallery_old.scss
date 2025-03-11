@@ -1,0 +1,192 @@
+///
+/// Paradigm Shift by HTML5 UP
+/// html5up.net | @ajlkn
+/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+///
+
+/* Gallery */
+
+@include keyframes('gallery-modal-spinner') {
+	0% {
+		@include vendor('transform', 'rotate(0deg)');
+	}
+
+	100% {
+		@include vendor('transform', 'rotate(360deg)');
+	}
+}
+
+.gallery {
+	$gutter: _size(gallery-gutter);
+	position: relative;
+	margin: ($gutter * -1) 0 0 ($gutter * -1);
+	width: calc(100% + #{$gutter});
+
+	// Container styles
+	display: flex;
+	flex-wrap: wrap;
+
+	a {
+		border-bottom: 0;
+		display: block;
+		margin: $gutter 0 0 $gutter;
+		outline: 0;
+		position: relative;
+		width: calc(100% - #{$gutter});
+		transition: opacity 0.3s ease;
+
+		img {
+			display: block;
+			height: 25vw;
+			min-height: 18rem;
+			object-fit: cover;
+			object-position: center;
+			width: 100%;
+		}
+
+		&.landscape {
+			width: 100%;
+
+			img {
+				height: 30vw;
+			}
+		}
+
+		&.portrait {
+			img {
+				height: 30vw;
+			}
+		}
+	}
+
+	// Navigation buttons
+	.gallery-nav {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 10;
+		background: rgba(0, 0, 0, 0.5);
+		border: none;
+		border-radius: 50%;
+		width: 44px;
+		height: 44px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+		color: white;
+
+		&:hover {
+			background: rgba(0, 0, 0, 0.75);
+		}
+
+		svg {
+			width: 24px;
+			height: 24px;
+		}
+
+		&.prev {
+			left: 1rem;
+		}
+
+		&.next {
+			right: 1rem;
+		}
+	}
+
+	// Counter
+	.gallery-counter {
+		position: absolute;
+		bottom: 1rem;
+		left: 50%;
+		transform: translateX(-50%);
+		background: rgba(0, 0, 0, 0.5);
+		color: white;
+		padding: 0.5rem 1rem;
+		border-radius: 2rem;
+		font-size: 0.9rem;
+		z-index: 10;
+	}
+
+	@include breakpoint('<=medium') {
+		a {
+			img {
+				height: 20rem;
+			}
+
+			&.landscape {
+				img {
+					height: 25rem;
+				}
+			}
+
+			&.portrait {
+				img {
+					height: 25rem;
+				}
+			}
+		}
+	}
+
+	@include breakpoint('<=small') {
+		$gutter: (
+			_size(gallery-gutter) * 0.5
+		);
+
+	margin: ($gutter * -1) 0 0 ($gutter * -1);
+	width: calc(100% + #{$gutter});
+
+	a {
+		margin: $gutter 0 0 $gutter;
+		width: calc(100% - #{$gutter});
+
+		img {
+			height: 20rem;
+		}
+
+		&.landscape {
+			img {
+				height: 20rem;
+			}
+		}
+
+		&.portrait {
+			img {
+				height: 30rem;
+			}
+		}
+	}
+
+	.gallery-nav {
+		width: 38px;
+		height: 38px;
+
+		svg {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
+@include breakpoint('<=xsmall') {
+	a {
+		img {
+			height: 12rem;
+			min-height: 0;
+		}
+
+		&.landscape {
+			img {
+				height: 12rem;
+			}
+		}
+
+		&.portrait {
+			img {
+				height: 14rem;
+			}
+		}
+	}
+}
+}
