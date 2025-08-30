@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Metal Weight Calculator</h1>
+            <p>Calculate precise weights for various metal shapes and materials</p>
+        </div>
+
+        <div class="main-content">
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="material">Material</label>
+                    <select id="material">
+                        <option value="">Select Material...</option>
+                    </select>
+                </div>
+
+                <div class="dimensions-grid">
+                    <div class="form-group">
+                        <label for="shape">Shape</label>
+                        <select id="shape">
+                            <option value="">Select Shape...</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" min="1" value="1" step="1">
+                    </div>
+                </div>
+
+                <div id="dimensions">
+                    <!-- Dynamic dimension inputs will be inserted here -->
+                </div>
+
+                <div class="buttons">
+                    <button class="btn btn-primary" onclick="calculateWeight()">Calculate Weight</button>
+                    <button class="btn btn-secondary" onclick="clearForm()">Clear All</button>
+                </div>
+
+                <div id="results" class="results hidden">
+                    <h3>Calculated Weight</h3>
+                    <div class="weight-display">
+                        <div class="weight-item">
+                            <div class="weight-value" id="weightLbs">0.00</div>
+                            <div class="weight-unit">Pounds (lbs)</div>
+                        </div>
+                        <div class="weight-item">
+                            <div class="weight-value" id="weightKgs">0.00</div>
+                            <div class="weight-unit">Kilograms (kg)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visualization">
+                <div class="shape-container">
+                    <canvas id="threeCanvas"></canvas>
+                </div>
+                <div class="shape-info" id="shapeInfo">
+                    Choose a material and shape to see the 3D visualization
+                </div>
+                <div class="material-info" id="materialInfo"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="three.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
