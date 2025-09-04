@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metal Weight Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Enhanced Metal Weight Calculator</title>
+    <link rel="stylesheet" href="style.min.css">
 </head>
 
 <body>
     <div class="container">
         <div class="header">
-            <h1>Metal Weight Calculator</h1>
-            <p>Calculate precise weights for various metal shapes and materials</p>
+            <h1>Enhanced Metal Weight Calculator</h1>
+            <p>Calculate precise weights for various metal shapes and materials with 3D visualization</p>
         </div>
 
         <div class="main-content">
@@ -42,6 +42,19 @@
                     <!-- Dynamic dimension inputs will be inserted here -->
                 </div>
 
+                <div class="form-group">
+                    <label for="rate">Rate (Optional)</label>
+                    <div class="rate-input">
+                        <input type="number" id="rate" step="0.01" min="0" placeholder="Enter rate">
+                        <select id="rateUnit">
+                            <option value="per kg">per kg</option>
+                            <option value="per lb">per lb</option>
+                            <option value="per gram">per gram</option>
+                            <option value="per ounce">per ounce</option>
+                        </select>
+                    </div>
+                </div>
+
                 <div class="buttons">
                     <button class="btn btn-primary" onclick="calculateWeight()">Calculate Weight</button>
                     <button class="btn btn-secondary" onclick="clearForm()">Clear All</button>
@@ -51,12 +64,25 @@
                     <h3>Calculated Weight</h3>
                     <div class="weight-display">
                         <div class="weight-item">
-                            <div class="weight-value" id="weightLbs">0.00</div>
-                            <div class="weight-unit">Pounds (lbs)</div>
+                            <div class="weight-value" id="weightKgs">0.00</div>
+                            <div class="weight-unit">Kilogram</div>
                         </div>
                         <div class="weight-item">
-                            <div class="weight-value" id="weightKgs">0.00</div>
-                            <div class="weight-unit">Kilograms (kg)</div>
+                            <div class="weight-value" id="weightGrams">0.00</div>
+                            <div class="weight-unit">Gram</div>
+                        </div>
+                        <div class="weight-item">
+                            <div class="weight-value" id="weightLbs">0.00</div>
+                            <div class="weight-unit">Pound</div>
+                        </div>
+                        <div class="weight-item">
+                            <div class="weight-value" id="weightOunces">0.00</div>
+                            <div class="weight-unit">Ounce</div>
+                        </div>
+                    </div>
+                    <div id="totalCost" class="total-cost hidden">
+                        <div class="cost-display">
+                            Total cost: <span id="costValue">0.00</span>
                         </div>
                     </div>
                 </div>
@@ -73,10 +99,10 @@
             </div>
         </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
-    <script src="three.js"></script>
-    <script src="app.js"></script>
+    <script src="three-shape.min.js"></script>
+    <script src="app.min.js"></script>
 </body>
 
 </html>
