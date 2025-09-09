@@ -1,0 +1,25 @@
+<svg width="250" height="115" viewBox="0 0 250 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_9_324)">
+<rect x="-17.0746" y="-26.3879" width="200.922" height="2" transform="rotate(30.4568 -17.0746 -26.3879)" fill="#0F52BA"/>
+<rect x="-16.2493" y="-19.3228" width="196.746" height="2" transform="rotate(30.5377 -16.2493 -19.3228)" fill="#0F52BA"/>
+<rect x="34.9951" y="-9" width="138.234" height="2" transform="rotate(29.8403 34.9951 -9)" fill="#0F52BA"/>
+<rect x="55.976" y="-8" width="118.322" height="2" transform="rotate(29.2058 55.976 -8)" fill="#0F52BA"/>
+<rect x="103.7" y="-11.509" width="126.434" height="2" transform="rotate(29.0267 103.7 -11.509)" fill="#0F52BA"/>
+<path d="M67.952 50.186H70.514V57.844H74.672V60H67.952V50.186Z" fill="#0F52BA"/>
+<rect x="151" y="90" width="68" height="1" fill="#0F52BA"/>
+<rect x="229" y="50" width="33" height="1" transform="rotate(90 229 50)" fill="#0F52BA"/>
+<path d="M178.972 95.186H181.73L183.942 103.418H183.382L185.594 95.186H188.1L190.34 103.418H189.78L191.978 95.186H194.61L191.292 105H188.66L186.504 97.23L187.092 97.244L184.908 105H182.276L178.972 95.186Z" fill="#0F52BA"/>
+<path d="M230.952 61.186H233.514V65.204H237.476V61.186H240.038V71H237.476V67.22H233.514V71H230.952V61.186Z" fill="#0F52BA"/>
+<rect x="219" y="88" width="1" height="5" fill="#0F52BA"/>
+<rect x="231" y="83" width="1" height="5" transform="rotate(90 231 83)" fill="#0F52BA"/>
+<rect x="150" y="88" width="1" height="5" fill="#0F52BA"/>
+<rect x="231" y="49" width="1" height="5" transform="rotate(90 231 49)" fill="#0F52BA"/>
+<rect x="149" y="49" width="70" height="35" rx="8" fill="#0F52BA"/>
+<path d="M141.447 43.691C142.287 43.691 142.935 43.886 143.391 44.276C143.847 44.66 144.075 45.203 144.075 45.905C144.075 46.643 143.847 47.219 143.391 47.633C142.935 48.041 142.287 48.245 141.447 48.245H140.259V50H138.612V43.691H141.447ZM141.447 46.949C141.789 46.949 142.05 46.865 142.23 46.697C142.416 46.529 142.509 46.28 142.509 45.95C142.509 45.632 142.416 45.392 142.23 45.23C142.05 45.068 141.789 44.987 141.447 44.987H140.259V46.949H141.447ZM141.159 47.642H142.761L144.264 50H142.401L141.159 47.642Z" fill="#0F52BA"/>
+</g>
+<defs>
+<clipPath id="clip0_9_324">
+<rect width="250" height="115" fill="white"/>
+</clipPath>
+</defs>
+</svg>
