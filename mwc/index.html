@@ -31,8 +31,14 @@
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="shape">Shape</label>
-                            <div class="select-container">
-                                <select id="shape" class="form-select">
+                            <div class="select-container shape-select-container">
+                                <button class="shape-select-button" id="shapeSelectButton">
+                                    <span id="shapeSelectedText">Select Shape...</span>
+                                    <div class="shape-select-arrow" id="shapeArrow"></div>
+                                </button>
+
+                                <!-- Hidden original select for form compatibility -->
+                                <select id="shape" class="form-select" style="display: none;">
                                     <option value="">Select Shape...</option>
                                 </select>
                             </div>
@@ -69,11 +75,12 @@
                                     placeholder="Enter rate">
                             </div>
                             <div class="select-container">
+                                <label class="form-label" for="rateUnit">Rate Unit</label>
                                 <select id="rateUnit" class="form-select">
-                                    <option value="per kg">per kg</option>
-                                    <option value="per lb">per lb</option>
-                                    <option value="per gram">per gram</option>
-                                    <option value="per ounce">per ounce</option>
+                                    <option value="per kg">Per KG</option>
+                                    <option value="per lb">Per LB</option>
+                                    <option value="per gram">Per Gram</option>
+                                    <option value="per ounce">Per Ounce</option>
                                 </select>
                             </div>
                         </div>
@@ -126,6 +133,21 @@
                     Choose a material and shape to see the 3D visualization
                 </div>
                 <div class="material-info" id="materialInfo"></div>
+            </div>
+        </div>
+
+        <!-- Shape Dropdown Overlay -->
+        <div class="shape-dropdown-overlay" id="shapeDropdownOverlay"></div>
+
+        <!-- Shape Dropdown Panel -->
+        <div class="shape-dropdown-panel" id="shapeDropdownPanel">
+            <div class="shape-panel-header">
+                <span>Select Shape...</span>
+                <button class="shape-close-button" id="shapeCloseButton">&times;</button>
+            </div>
+
+            <div class="shape-options-grid" id="shapeOptionsGrid">
+                <!-- Options will be dynamically generated from shapesData -->
             </div>
         </div>
     </div>
