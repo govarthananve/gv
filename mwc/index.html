@@ -22,14 +22,20 @@
                 <div class="controls-and-icon-container">
                     <div class="controls-section">
                         <div class="form-group">
-                            <select id="material">
-                                <option value="">Select Material...</option>
-                            </select>
+                            <label class="form-label" for="material">Material</label>
+                            <div class="select-container">
+                                <select id="material" class="form-select">
+                                    <option value="">Select Material...</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <select id="shape">
-                                <option value="">Select Shape...</option>
-                            </select>
+                            <label class="form-label" for="shape">Shape</label>
+                            <div class="select-container">
+                                <select id="shape" class="form-select">
+                                    <option value="">Select Shape...</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
 
@@ -50,19 +56,26 @@
                 </div>
                 <div class="quantity-rate-row">
                     <div class="form-group">
-                        <label for="quantity">Quantity</label>
-                        <input type="number" id="quantity" min="1" value="1" step="1">
+                        <label class="form-label" for="quantity">Quantity</label>
+                        <div class="input-container">
+                            <input type="number" id="quantity" class="form-input" min="1" value="1" step="1">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label for="rate">Rate (Optional)</label>
+                        <label class="form-label" for="rate">Rate (Optional)</label>
                         <div class="rate-input">
-                            <input type="number" id="rate" step="0.01" min="0" placeholder="Enter rate">
-                            <select id="rateUnit">
-                                <option value="per kg">per kg</option>
-                                <option value="per lb">per lb</option>
-                                <option value="per gram">per gram</option>
-                                <option value="per ounce">per ounce</option>
-                            </select>
+                            <div class="input-container">
+                                <input type="number" id="rate" class="form-input" step="0.01" min="0"
+                                    placeholder="Enter rate">
+                            </div>
+                            <div class="select-container">
+                                <select id="rateUnit" class="form-select">
+                                    <option value="per kg">per kg</option>
+                                    <option value="per lb">per lb</option>
+                                    <option value="per gram">per gram</option>
+                                    <option value="per ounce">per ounce</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                 </div>
