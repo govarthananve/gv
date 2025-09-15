@@ -23,24 +23,29 @@
                     <div class="controls-section">
                         <div class="form-group">
                             <label class="form-label" for="material">Material</label>
-                            <div class="select-container">
-                                <select id="material" class="form-select">
-                                    <option value="">Select Material...</option>
-                                </select>
+                            <div class="select-container mwc-select-container">
+                                <button class="mwc-select-button" id="materialSelect">
+                                    <span id="materialSelectText" class="select-text">
+                                        <span class="select-icon" style="background: var(--primary-blue)"></span> Select
+                                        Material...
+                                    </span>
+                                    <div class="mwc-select-arrow" id="materialArrow"></div>
+                                </button>
+                                <ul class="select_ul" id="materialOptions">
+                                    <!-- Options will be dynamically populated from materialsData -->
+                                </ul>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="shape">Shape</label>
                             <div class="select-container shape-select-container">
                                 <button class="shape-select-button" id="shapeSelectButton">
-                                    <span id="shapeSelectedText">Select Shape...</span>
+                                    <span id="shapeSelectedText" class="select-text">
+                                        <span class="select-svg-icon" id="shapeSelectIcon"
+                                            style="background: var(--primary-blue)"></span> Select Shape...
+                                    </span>
                                     <div class="shape-select-arrow" id="shapeArrow"></div>
                                 </button>
-
-                                <!-- Hidden original select for form compatibility -->
-                                <select id="shape" class="form-select" style="display: none;">
-                                    <option value="">Select Shape...</option>
-                                </select>
                             </div>
                         </div>
                     </div>
@@ -78,8 +83,8 @@
                                 <label class="form-label" for="rateUnit">Rate Unit</label>
                                 <select id="rateUnit" class="form-select">
                                     <option value="per kg">Per KG</option>
-                                    <option value="per lb">Per LB</option>
                                     <option value="per gram">Per Gram</option>
+                                    <option value="per lb">Per LB</option>
                                     <option value="per ounce">Per Ounce</option>
                                 </select>
                             </div>
@@ -125,7 +130,7 @@
                     <canvas id="threeCanvas"></canvas>
                     <div class="rotation-controls">
                         <button id="autoRotateToggle" class="btn btn-small" onclick="toggleAutoRotation()">
-                            Auto Rotate: ON
+                            Auto Rotate: OFF
                         </button>
                     </div>
                 </div>
