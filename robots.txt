@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://govarthanan.com/
+Sitemap: https://govarthanan.com//sitemap.xml
